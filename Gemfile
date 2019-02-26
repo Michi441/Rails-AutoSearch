@@ -26,6 +26,8 @@ gem 'rails-jquery-autocomplete'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'jquery-ui-rails'
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
