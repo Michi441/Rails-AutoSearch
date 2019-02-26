@@ -12,6 +12,8 @@ class PostsController < ApplicationController
       if @post.exists?
         redirect_to post_url(@post.ids)
       else
+        @randomPost = Post.order("RANDOM()").limit(1)
+        flash[:alert] = "No Record found with the letters '#{params[:search]}'.\n\nTry something like #{@randomPost.first.title} "
         redirect_to posts_url
       end
     else
